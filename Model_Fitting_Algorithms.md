@@ -1,4 +1,6 @@
-# Model-fitting approaches
+# Model-Fitting Approaches
+
+This page details the fitting algorithms/processes supported by various microlensing packages.
 
 ## Overview
 
