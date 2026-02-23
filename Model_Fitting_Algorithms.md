@@ -1,4 +1,4 @@
-Make table showing the model-fitting approaches for each of the packages. This might include some extensive notes as well... but a summary table would be useful. 
+Make table showing the model-fitting approaches for each of the packages. 
 
 ## Overview
 
@@ -13,14 +13,17 @@ Make table showing the model-fitting approaches for each of the packages. This m
 
 ## Package Specific Notes
 
-<!-- ### BAGLE  -->
+### BAGLE
 
-<!-- ### VBM  -->
 
-<!-- ### MulensModel  -->
 
-<!-- ### pyLIMA  -->
+<!-- ### VBM -->
 
-<!-- ### RTModel  -->
 
-<!-- ### essunhong  -->
+<!-- ### MulensModel -->
+
+<!-- ### pyLIMA -->
+
+<!-- ### RTModel -->
+
+<!-- ### essunhong -->
