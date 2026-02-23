@@ -13,17 +13,24 @@ Make table showing the model-fitting approaches for each of the packages.
 
 ## Package Specific Notes
 
-### BAGLE
+<!-- ### ### BAGLE -->
 
 
 
 <!-- ### VBM -->
 
 
+
 <!-- ### MulensModel -->
+
+
 
 <!-- ### pyLIMA -->
 
+
+
 <!-- ### RTModel -->
+
+
 
 <!-- ### essunhong -->
