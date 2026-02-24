@@ -4,12 +4,12 @@ This page describes the types of models (e.g. single-lens or binary lens) that a
 
 ## Defintions
 
-VBM* = VBMicrolensing for model generation and RTModel for Fitting
-MM = MulensModel
-PSPL = Point Source, Point Lens (1S1L)
-PSBL = Point Source, Binary Lens (1S2L)
-BSPL = Binary Source, Point Lens (2S1L)
-BSBL = Binary Source, Binary Lens (2S2L)
+VBM* = VBMicrolensing for model generation and RTModel for Fitting  
+MM = MulensModel  
+PSPL = Point Source, Point Lens (1S1L)  
+PSBL = Point Source, Binary Lens (1S2L)  
+BSPL = Binary Source, Point Lens (2S1L)  
+BSBL = Binary Source, Binary Lens (2S2L)  
 
 | Feature                                                | BAGLE | VBM* | MM | pyLIMA | RTModel | eesunhong  |
 |--------------------------------------------------------|-------|------|----|--------|---------|------------|
