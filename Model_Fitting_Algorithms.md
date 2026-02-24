@@ -6,9 +6,10 @@ This page details the fitting algorithms/processes supported by various microlen
 
 | Algorithm                                              | BAGLE | VBM | MM | pyLIMA | RTModel | eesunhong | microlux | microJax |
 |--------------------------------------------------------|-------|-----|----|--------|---------|-----------|----------|----------|
-| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y         | N        |          |
+| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y         | N        | N        |
 | | | | | | | | | |
 | Binary Grid search                                     |       |     |    |        |         | Y         |          |          |
+| MCMC                                                   |       |     |    |        |         | Y         |          |          |
 | Differential Evolution                                 |       |     |    | Y      |         |           |          |          |
 | Nested Samples                                         | Y     |     |    |        |         |           |          |          |
 | Levenberg–Marquardt                                    |       |     |    |        | Y       |           |          |          |
@@ -22,7 +23,7 @@ This page details the fitting algorithms/processes supported by various microlen
 **Documentation Link:** [https://bagle.readthedocs.io/en/latest/](https://bagle.readthedocs.io/en/latest/)
 
 
-
+<!--
 ### `VBM`
 
 **GitHub Link:** [https://github.com/valboz/VBMicrolensing](https://github.com/valboz/VBMicrolensing)  
@@ -34,6 +35,7 @@ This page details the fitting algorithms/processes supported by various microlen
 
 **GitHub Link:** [https://github.com/rpoleski/MulensModel](https://github.com/rpoleski/MulensModel)  
 **Documentation Link:** [https://rpoleski.github.io/MulensModel/](https://rpoleski.github.io/MulensModel/)
+-->
 
 
 
@@ -57,7 +59,7 @@ This page details the fitting algorithms/processes supported by various microlen
 **Documentation Link:** [https://eesunhong.readthedocs.io/en/latest/index.html](https://eesunhong.readthedocs.io/en/latest/index.html)
 
 
-
+<!--
 ### `microlux`
 
 **GitHub Link:** [https://github.com/CoastEgo/microlux](https://github.com/CoastEgo/microlux)  
@@ -69,6 +71,6 @@ This page details the fitting algorithms/processes supported by various microlen
 
 **GitHub Link:** [https://github.com/ShotaMiyazaki94/microjax](https://github.com/ShotaMiyazaki94/microjax)  
 **Documentation Link:** [https://shotamiyazaki94.github.io/microjax/](https://shotamiyazaki94.github.io/microjax/)
-
+-->
 
 
