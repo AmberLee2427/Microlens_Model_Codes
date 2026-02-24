@@ -4,14 +4,15 @@ This page details the fitting algorithms/processes supported by various microlen
 
 ## Overview
 
-| Algorithm                                              | BAGLE | VBM | MM | pyLIMA | RTModel | eesunhong  |
-|--------------------------------------------------------|-------|-----|----|--------|---------|------------|
-| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y          |
-| | | | | | | |
-| Binary Grid search                                     |       |     |    |        |         | Y          |
-| Differential Evolution                                 |       |     |    | Y      |         |            |
-| Nested Samples                                         | Y     |     |    |        |         |            |
-| Levenberg–Marquardt                                    |       |     |    |        | Y       |            |
+| Algorithm                                              | BAGLE | VBM | MM | pyLIMA | RTModel | eesunhong | microlux |
+|--------------------------------------------------------|-------|-----|----|--------|---------|-----------|----------|
+| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y         | N
+| | | | | | | | |
+| Binary Grid search                                     |       |     |    |        |         | Y         |          |
+| Differential Evolution                                 |       |     |    | Y      |         |           |          |
+| Nested Samples                                         | Y     |     |    |        |         |           |          |
+| Levenberg–Marquardt                                    |       |     |    |        | Y       |           |          |
+| Autodifferentiation                                    |       |     |    |        |         |           | Y        |
 
 ## Package Specific Notes
 
@@ -36,3 +37,8 @@ This page details the fitting algorithms/processes supported by various microlen
 
 
 <!-- ### essunhong -->
+
+
+
+<!-- ### microlux
+https://github.com/CoastEgo/microlux
