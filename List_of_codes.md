@@ -4,7 +4,7 @@ Below is a list of publicly available gravitational microlensing modeling packag
 
 | Name and Repo | Docs | Language | Main Paper | Note |
 |---------------|------|----------|------------|------|
-| [VBMicrolensing](https://github.com/valboz/VBMicrolensing) | | C++, python wrapper | | model generation only | 
+| [VBMicrolensing](https://github.com/valboz/VBMicrolensing) | [docs](https://github.com/valboz/VBMicrolensing/tree/main/docs) | C++, python wrapper | | model generation only | 
 | [RTModel](https://github.com/valboz/RTModel) | [docs](https://github.com/valboz/RTModel/blob/main/docs/README.md) | C++, python wrapper | | model fitting (VBM for generation) |
 | [pyLIMA](https://github.com/ebachelet/pyLIMA) | [docs](https://pylima.readthedocs.io/en/latest/) | python | | |
 | [MulensModel](https://github.com/rpoleski/MulensModel) | [docs](https://rpoleski.github.io/MulensModel/) | python | | |
