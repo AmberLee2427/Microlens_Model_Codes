@@ -13,7 +13,7 @@ This page details the fitting algorithms/processes supported by various microlen
 | Differential Evolution                                 |       |     |    | Y      |         |           |          |          |
 | Nested Samples                                         | Y     |     |    |        |         |           |          |          |
 | Levenberg–Marquardt                                    |       |     |    |        | Y       |           |          |          |
-| Autodifferentiation                                    |       |     |    |        |         |           | Y        | Y        |
+| Auto-Differentiation                                    |       |     |    |        |         |           | Y        | Y        |
 
 ## Package Specific Notes
 
