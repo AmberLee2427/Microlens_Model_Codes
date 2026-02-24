@@ -4,41 +4,69 @@ This page details the fitting algorithms/processes supported by various microlen
 
 ## Overview
 
-| Algorithm                                              | BAGLE | VBM | MM | pyLIMA | RTModel | eesunhong | microlux |
-|--------------------------------------------------------|-------|-----|----|--------|---------|-----------|----------|
-| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y         | N
-| | | | | | | | |
-| Binary Grid search                                     |       |     |    |        |         | Y         |          |
-| Differential Evolution                                 |       |     |    | Y      |         |           |          |
-| Nested Samples                                         | Y     |     |    |        |         |           |          |
-| Levenberg–Marquardt                                    |       |     |    |        | Y       |           |          |
-| Autodifferentiation                                    |       |     |    |        |         |           | Y        |
+| Algorithm                                              | BAGLE | VBM | MM | pyLIMA | RTModel | eesunhong | microlux | microJax |
+|--------------------------------------------------------|-------|-----|----|--------|---------|-----------|----------|----------|
+| Uses Fitted Algorithm of Any Kind                      | Y     | N   | N  | Y      | Y       | Y         | N        |          |
+| | | | | | | | | |
+| Binary Grid search                                     |       |     |    |        |         | Y         |          |          |
+| Differential Evolution                                 |       |     |    | Y      |         |           |          |          |
+| Nested Samples                                         | Y     |     |    |        |         |           |          |          |
+| Levenberg–Marquardt                                    |       |     |    |        | Y       |           |          |          |
+| Autodifferentiation                                    |       |     |    |        |         |           | Y        | Y        |
 
 ## Package Specific Notes
 
-<!-- ### ### BAGLE -->
+### BAGLE
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### VBM -->
+### VBM
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### MulensModel -->
+### MulensModel
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### pyLIMA -->
+### pyLIMA
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### RTModel -->
+### RTModel
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### essunhong -->
+### essunhong
+
+[GitHub Link: ]()
+[Documentation Link: ]()
 
 
 
-<!-- ### microlux
-https://github.com/CoastEgo/microlux
+### `microlux`
+
+[GitHub Link: https://github.com/CoastEgo/microlux](https://github.com/CoastEgo/microlux)
+[Documentation Link: https://coastego.github.io/microlux/](https://coastego.github.io/microlux/)
+
+
+### `microJAX`
+
+[GitHub Link: https://github.com/ShotaMiyazaki94/microjax](https://github.com/ShotaMiyazaki94/microjax)
+[Documentation Link: https://shotamiyazaki94.github.io/microjax/](https://shotamiyazaki94.github.io/microjax/)
+
+
