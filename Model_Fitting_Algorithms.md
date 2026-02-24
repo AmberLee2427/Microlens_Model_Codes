@@ -18,55 +18,57 @@ This page details the fitting algorithms/processes supported by various microlen
 
 ### BAGLE
 
-[GitHub Link: ]()
-[Documentation Link: ]()
+[GitHub Link: https://github.com/MovingUniverseLab/BAGLE_Microlensing](https://github.com/MovingUniverseLab/BAGLE_Microlensing)  
+[Documentation Link: https://bagle.readthedocs.io/en/latest/](https://bagle.readthedocs.io/en/latest/)
 
 
 
 ### VBM
 
-[GitHub Link: ]()
-[Documentation Link: ]()
+[GitHub Link: https://github.com/valboz/VBMicrolensing](https://github.com/valboz/VBMicrolensing)  
+[Documentation Link: https://github.com/valboz/VBMicrolensing/tree/main/docs](https://github.com/valboz/VBMicrolensing/tree/main/docs)
 
 
 
 ### MulensModel
 
-[GitHub Link: ]()
-[Documentation Link: ]()
+[GitHub Link: https://github.com/rpoleski/MulensModel](https://github.com/rpoleski/MulensModel)  
+[Documentation Link: https://rpoleski.github.io/MulensModel/](https://rpoleski.github.io/MulensModel/)
 
 
 
 ### pyLIMA
 
-[GitHub Link: ]()
+[GitHub Link: ]()  
 [Documentation Link: ]()
 
 
 
 ### RTModel
 
-[GitHub Link: ]()
+[GitHub Link: ]()  
 [Documentation Link: ]()
 
 
 
 ### essunhong
 
-[GitHub Link: ]()
+[GitHub Link: ]()  
 [Documentation Link: ]()
 
 
 
 ### `microlux`
 
-[GitHub Link: https://github.com/CoastEgo/microlux](https://github.com/CoastEgo/microlux)
+[GitHub Link: https://github.com/CoastEgo/microlux](https://github.com/CoastEgo/microlux)  
 [Documentation Link: https://coastego.github.io/microlux/](https://coastego.github.io/microlux/)
+
 
 
 ### `microJAX`
 
-[GitHub Link: https://github.com/ShotaMiyazaki94/microjax](https://github.com/ShotaMiyazaki94/microjax)
+[GitHub Link: https://github.com/ShotaMiyazaki94/microjax](https://github.com/ShotaMiyazaki94/microjax)  
 [Documentation Link: https://shotamiyazaki94.github.io/microjax/](https://shotamiyazaki94.github.io/microjax/)
+
 
 
