@@ -14,7 +14,8 @@ The table below contains the input time system, how time is handled for parallax
 | microlux       | ... | ... | ...
 | microjax       | ... | ... | Heliocentric
 
-BAGLE, MulensModel and pyLIMA retrieve the Earth position from the Solar System Barycenter (SSB) with the Astropy function `get_body_barycentric()`. It depends on the time scale (tipically BJD_TDB) provided by the user, which is used to compute the parallax displacement.
+BAGLE, MulensModel and pyLIMA retrieve Earth position from the Solar System Barycenter (SSB) with the Astropy function `get_body_barycentric()`.
+It depends on the time scale (tipically BJD_TDB) provided by the user, which is used to compute the parallax displacement.
 VBMicrolensing instead uses precomputed ephemeris tables from JPL Horizons (DE441).
 The different kernel compared to the other packages (DE441 vs. DE430) produces a difference in Earth position of ~100 km, which is not responsible for the parallax difference reported in Lu et al. ([2025](https://ui.adsabs.harvard.edu/abs/2025arXiv251203364L/abstract)).
 
@@ -28,9 +29,9 @@ It is a coordinate time defined at the Solar System Barycenter and is the standa
 
 ### To-Do List:
 
-- Double checking with code developers
-- Make a separate table for survey conventions for `t_0`
-- Check DE430 (default) and more recent kernels, how much they affect the Earth position
+- Add missing info about eesunhong, muLAN, microlux and microjax
+- Double check with code developers
+- Make a separate table for survey conventions for `t_0`?
 <!-- - Write notes about the conventions and how to convert from one another -->
 
 Last updated: 25 Feb 2026, Raphael
