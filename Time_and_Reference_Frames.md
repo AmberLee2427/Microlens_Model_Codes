@@ -1,33 +1,36 @@
 ## Reference frames and time standards
 
-This page lists the reference frames and time standards used by each microlensing modeling code, with focus on parallax calculations.
-The table below contains the input time system, how time is handled for parallax calculations, and the parallax reference frame (i.e., the observer position center).
+This page lists the reference frames and time standards used by each microlensing modeling code, with a focus on parallax calculations.
+The table below contains the input time system, how time is handled for parallax calculations, and the parallax reference frame (i.e., the observer position center used to compute the parallax displacement).
 
-| Code           | Input time system      | Time handling for parallax | Parallax frame    | Refs. |
-|----------------|------------------------|----------------------------|-------------------|-------|
-| BAGLE          | MJD                    | BJD_TDB                    | Heliocentric?     | [1](https://rpoleski.github.io/MulensModel/MulensModel.mulensdata.html)      |
-| VBM / RTModel  | HJD' (JD' can be used) | Internally JD <-> HJD      | SSB (Barycentric) |       |
-| MulensModel    | Any (if no parallax)   | BJD_TDB                    | SSB (Barycentric) -- Geocentric |       |
-| pyLIMA         | JD                     | Depends on dataset?        | SSB (Barycentric) | [1](https://pylima.readthedocs.io/en/latest/source/Conventions.html) |
+| Code           | Input time system      | Time handling for parallax | Parallax frame        | Refs. |
+|----------------|------------------------|----------------------------|-----------------------|-------|
+| BAGLE          | MJD                    | BJD_TDB                    | Heliocentric?         | [1](https://ui.adsabs.harvard.edu/abs/2025arXiv251203364L/abstract) |
+| VBM / RTModel  | HJD' (JD' optional)    | Internally JD <-> HJD      | Barycentric           | [2](https://github.com/valboz/VBMicrolensing/blob/main/docs/python/Parallax.md)      |
+| MulensModel    | Any (if no parallax)   | BJD_TDB                    | Geocentric (`t0_par`) | [3](https://rpoleski.github.io/MulensModel/MulensModel.mulensdata.html)      |
+| pyLIMA         | JD                     | Depends on dataset?        | Geocentric?           | [4](https://pylima.readthedocs.io/en/latest/source/Conventions.html) |
 | eesunhong      | ... | | Heliocentric
 | muLAN          | HJD                    | MJD_TDB                    | 
 | microlux       | ...
 | microjax       | ... | | Heliocentric
 
-Regarding the microlensing surveys, the time system from OGLE are in Julian Date (JD), while MOA and KMTNet use Heliocentric Julian Date (HJD).
-*I will still double check that and extend it for the other surveys and space telescopes.*
+When retrieving ephemeris, BAGLE, MulensModel and pyLIMA obtain Solar System Barycenter (SSB) position with astropy.coordinates.get_body_barycentric(), which depends on the time scale (tipically BJD_TDB).
+The user has to provide BJD times (or at least HJD) for the parallax calculations.
+VBM instead uses precomputed ephemeris tables from JPL Horizons (DE441).
 
-Obs: Time difference between heliocentric and SSB is ~1 sec.
+Regarding microlensing surveys, OGLE data are typically provided in Julian Date (JD), while MOA and KMTNet commonly use Heliocentric Julian Date (HJD).
+*This should be verified and extended to other surveys and space missions.*
 
-Obs2: BJD_TDB stands for Barycentric Julian Date, Barycentric Dynamic Time. It is the time coordinate in the SSB frame, used for calculating planetary ephemerides and is a relativistic, coordinate time. TDB differs from TT by periodic terms (up to ~1.6 milliseconds) due to relativistic effects.
+Note: Time difference between heliocentric and SSB is ~1 sec.
+
+Note: BJD_TDB stands for Barycentric Julian Date in Barycentric Dynamical Time.
+It is a coordinate time defined at the Solar System Barycenter and is the standard time scale used in modern planetary ephemerides. TDB differs from TT by periodic relativistic terms with amplitudes up to ~1.6 milliseconds.
 
 ### To-Do List:
 
 - Double checking with code developers
-- Add links in the Refs. column
-- Add a column for parallax parametrization?
 - Make a separate table for survey conventions for `t_0`
-- Write notes about the conventions and how to convert from one another
+<!-- - Write notes about the conventions and how to convert from one another -->
 - Check DE430 (default) and more recent kernels, how much they affect the Earth position
 
 <!-- Internal notes (to be deleted...) -->
@@ -38,4 +41,3 @@ Obs2: BJD_TDB stands for Barycentric Julian Date, Barycentric Dynamic Time. It i
 <!-- ``OGLE uses heliocentric (not SSB), MOA uses geocentric JD, KMTNet uses heliocentric.'' -->
 <!-- MulensModel notes about astropy's get_body_barycentric() function -->
 <!-- Seems that get_body_barycentric depends on time system, but there is no way to set BJD part of BJD_TDB in astropy.Time(). The option *format* above indicates if the first argument of Time() is a float indicating JD or e.g., a string in the form '1999-01-01T00:00:00.123' - this would be value 'fits'. Hence, the user has to provide BJD times (or at least HJD). -->
-
